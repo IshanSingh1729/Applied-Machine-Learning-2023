@@ -1,0 +1,163 @@
+Current State
+
+Qualitative: High levels of fraud => negative impact on business operations and reputation => financial losses
+
+Quantitative: 10% of transactions are fraudulent => $1 million in annual losses
+
+Question: What is the current situation (pains/desires) that we want to address and why?
+
+Objectives
+
+Qualitative:
+
+Build a model that can accurately detect fraudulent transactions
+
+Decrease fraud => improve business operations and reputation => reduce financial losses => protect bottom line
+
+Quantitative: Reduce fraudulent transactions by at least 50% (from 10% to 5%) => $500,000 annual savings in losses
+
+Question: What is that we want to do and why? (To protect bottom line?)
+
+Benefit/Cost Tradeoff and Prioritization
+
+Qualitative:
+
+Cost of errors: FN (False Negative) => fraudulent transaction not detected => financial loss
+
+FP (False Positive) => legitimate transaction flagged as fraudulent => negative impact on customer experience => potential loss of revenue
+
+Benefits of correct predictions: TP (True Positive) => fraudulent transaction detected and prevented => financial savings
+
+TN (True Negative) => legitimate transaction not flagged as fraudulent => positive impact on customer experience => no significant impact on revenue
+
+Quantitative: cost-benefit matrix
+
+Question: What are the cost of errors/benefits of correct predictions and why?
+
+Constraints
+
+Qualitative: Need to balance the cost of false positives with the benefits of detecting fraud
+
+Quantitative: At most 1% false positives => 0.1% negative impact on customer experience => acceptable risk for potential financial savings
+
+Question: What are the acceptable risks/budgets and why?
+
+Desired State
+
+Qualitative:
+
+Benefit: Significantly lower levels of fraud => improved business operations and reputation => reduced financial losses
+
+Cost: Very few false positives => minimal negative impact on customer experience
+
+Quantitative:
+
+At least 50% decrease in fraud (from 10% to 5%) => $500,000 annual savings in losses
+
+At most 1% false positives => 0.1% negative impact on customer experience
+
+Question: What is the desired outcome (benefits/costs) that we want to see and why?
+
+
+
+
+
+Why ML:
+
+Best Non-ML Alternative Hypothesis
+
+Qualitative: rule-based approach where predefined rules are used to identify suspicious transactions => easily circumvented by fraudsters => high rate of false negatives => loss of revenue
+
+Quantitative: 20% detection rate, 80% false negatives => only 1 in 5 fraudulent transactions are detected, resulting in significant financial loss
+
+Question: what are the non-ML alternatives and why are they problematic (pains/missed gains)?
+
+ML Value Proposition Hypothesis
+
+Qualitative: more robust and adaptive approach that can learn from historical data and identify patterns that humans may not have thought of => better detection rate and fewer false negatives => less financial loss
+
+Quantitative: 80% detection rate, 20% false negatives => 4 out of 5 fraudulent transactions are detected, resulting in significant financial gain
+
+Question: what are the advantages (pain relievers/gain creators) of ML solution and why?
+
+ML Feasibility Hypothesis
+
+Qualitative:
+data: large amount of historical transaction data available
+
+model: state-of-the-art ML algorithms have been proven to be effective in fraud detection
+
+Quantitative:
+data: several million transactions
+
+model: state-of-the-art solutions have been shown to achieve a detection rate of over 90% with a false positive rate of less than 5%
+
+Question: what data and model are good candidates and why?
+
+
+
+
+ML Solution Design:
+
+Data
+
+Choices: (labelled) financial transaction data
+
+Metrics: class imbalance, feature importance
+
+Experiment: randomized 80/10/10 train/validation/test split
+
+Model
+
+Choices: pr(fraud)
+
+Metrics: F1-score (considering both precision and recall)
+
+Experiment:
+
+- Logistic Regression
+
+- Random Forest
+
+- XGBoost
+
+- Deep Learning based models
+
+train these benchmark models (from simpler to more complex) using train data. validate and tune using validation data. Select the model with best F1-score on test data
+
+Action
+
+Choices: if pr(fraud) > threshold: flag as fraudulent
+
+Metrics:
+
+- precision
+
+- recall
+
+- confusion matrix
+
+Experiment: choose a threshold to maximize the recall (estimated reward) subject to precision > 90%
+
+
+Reward
+
+Choices:
+
+- decrease in fraud
+
+- cost of misclassification
+
+Metrics:
+
+- % decrease in fraud
+
+- % increase in revenue
+
+Experiment:
+
+- shadow test
+
+- A/B test
+
+Deploy the model and monitor the performance regularly to ensure the model is still performing well and update the model if needed.
