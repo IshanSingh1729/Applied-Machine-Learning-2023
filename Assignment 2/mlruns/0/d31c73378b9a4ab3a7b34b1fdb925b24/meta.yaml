@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Jupyter%20Lab/CMI/Applied%20Machine%20Learning/Assignment%202/mlruns/0/d31c73378b9a4ab3a7b34b1fdb925b24/artifacts
+end_time: 1677333791640
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d31c73378b9a4ab3a7b34b1fdb925b24
+run_name: Multilayer Perceptron
+run_uuid: d31c73378b9a4ab3a7b34b1fdb925b24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677333782148
+status: 3
+tags: []
+user_id: Ishan
