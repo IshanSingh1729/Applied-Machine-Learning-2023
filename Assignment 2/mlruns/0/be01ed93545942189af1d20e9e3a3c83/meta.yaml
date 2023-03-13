@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Jupyter%20Lab/CMI/Applied%20Machine%20Learning/Assignment%202/mlruns/0/be01ed93545942189af1d20e9e3a3c83/artifacts
+end_time: 1677333748997
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: be01ed93545942189af1d20e9e3a3c83
+run_name: Multinomial Naive Bayes
+run_uuid: be01ed93545942189af1d20e9e3a3c83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677333741233
+status: 3
+tags: []
+user_id: Ishan
