@@ -1,0 +1,12 @@
+creation_timestamp: 1677333735497
+current_stage: None
+description: null
+last_updated_timestamp: 1677333735497
+name: random-forest-classification-model
+run_id: 4e078d03d11e48158cb379e4c190b2fd
+run_link: null
+source: file:///C:/Jupyter%20Lab/CMI/Applied%20Machine%20Learning/Assignment%202/mlruns/0/4e078d03d11e48158cb379e4c190b2fd/artifacts/sklearn-model
+status: READY
+status_message: null
+user_id: null
+version: 1

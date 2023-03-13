@@ -1,0 +1,12 @@
+creation_timestamp: 1677333746391
+current_stage: None
+description: null
+last_updated_timestamp: 1677333746391
+name: multinomial-nb-model
+run_id: be01ed93545942189af1d20e9e3a3c83
+run_link: null
+source: file:///C:/Jupyter%20Lab/CMI/Applied%20Machine%20Learning/Assignment%202/mlruns/0/be01ed93545942189af1d20e9e3a3c83/artifacts/sklearn-model
+status: READY
+status_message: null
+user_id: null
+version: 1
