@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Jupyter%20Lab/CMI/Applied%20Machine%20Learning/Assignment%202/mlruns/0/4e078d03d11e48158cb379e4c190b2fd/artifacts
+end_time: 1677333738059
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4e078d03d11e48158cb379e4c190b2fd
+run_name: 'n_estimators : 200, max_depth : 5'
+run_uuid: 4e078d03d11e48158cb379e4c190b2fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677333730372
+status: 3
+tags: []
+user_id: Ishan
