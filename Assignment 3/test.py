@@ -1,7 +1,12 @@
+import os
 import unittest
 from score import score
 from sklearn.neural_network import MLPClassifier
 import joblib
+import numpy as np
+import time
+from multiprocessing import Process
+from app import app
 
 
 
@@ -57,6 +62,32 @@ class TestScore(unittest.TestCase):
         # Test if the prediction is 0 on an obvious non-spam input text
         prediction, propensity = score(self.test_non_spam, self.model, self.threshold)
         self.assertEqual(prediction, 0)
+        
+        
+        
+        
+class TestFlask(unittest.TestCase):
+    
+    def test_flask(self):
+        # Launch the Flask app using os.system
+        os.system('python app.py &')
+
+        # Wait for the app to start up
+        time.sleep(1)
+
+        # Make a request to the endpoint
+        response = requests.get('http://127.0.0.1:5000/')
+        print(response.status_code)
+
+        # Assert that the response is what we expect
+        self.assertEqual(response.status_code, 200)
+        # print("OK")
+        self.assertEqual(type(response.text), str)
+        # print("OKAY")
+
+        # Shut down the Flask app using os.system
+        os.system('kill $(lsof -t -i:5000)')
+        
         
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
