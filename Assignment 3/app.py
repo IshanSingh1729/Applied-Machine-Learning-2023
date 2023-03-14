@@ -31,7 +31,7 @@ def spam():
     # Format the result message
     ans = f"""The sentence "{sent}" is {lbl} with propensity {prop} """
     
-    # Render the res.html template with the result message
+    # Render the result.html template with the result message
     return render_template('result.html', ans=ans)
 
 # Run the app in debug mode if this file is executed directly
